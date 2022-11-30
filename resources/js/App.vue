@@ -1,0 +1,3 @@
+<template>
+    {{ $newTickets['newTickets'] }}
+</template>
