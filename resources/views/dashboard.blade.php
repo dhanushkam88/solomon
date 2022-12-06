@@ -194,6 +194,7 @@
                 id:ticketModal,
             },
             success:function(response){
+                console.log(response);
                 // let shops =''
                 for (i=0;i<(response).length;i++) {
                     let id = response[i]['id'];

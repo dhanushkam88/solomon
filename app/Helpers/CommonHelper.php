@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 class CommonHelper
 {
     public static function getTicketInformation($id){
-        $data = Ticket::find($id)->with('ticketInformation')->get();
+        $data = Ticket::where('id',$id)->with('ticketInformation')->get();
         return $data;
     }
 

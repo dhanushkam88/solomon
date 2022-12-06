@@ -56,7 +56,6 @@ class VendorController extends Controller
 
     public function updateTicket(Request $request)
     {
-        dd($request);
         $request->validate([
             'id' => 'required',
         ]);
